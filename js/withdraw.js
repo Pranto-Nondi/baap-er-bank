@@ -6,11 +6,12 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     if (isNaN(inputWithdrawValue)) {
         return alert("Plaese Provide Any Valid Amount")
     }
-    const withdrawDisplay = inputWithdrawValue + displayWithdrawAmount;
-    const totalMainBalance = mainBalance - inputWithdrawValue;
-    if (inputWithdrawValue >mainBalance) {
+
+    if (inputWithdrawValue > mainBalance) {
         return alert("You have Insufficient Balance")
     }
+    const withdrawDisplay = inputWithdrawValue + displayWithdrawAmount;
+    const totalMainBalance = mainBalance - inputWithdrawValue;
     document.getElementById("withdraw-display").innerText = withdrawDisplay;
     document.getElementById("main-balance").innerText = totalMainBalance;
 
