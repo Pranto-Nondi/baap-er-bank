@@ -8,6 +8,9 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     }
     const withdrawDisplay = inputWithdrawValue + displayWithdrawAmount;
     const totalMainBalance = mainBalance - inputWithdrawValue;
+    if (inputWithdrawValue >mainBalance) {
+        return alert("You have Insufficient Balance")
+    }
     document.getElementById("withdraw-display").innerText = withdrawDisplay;
     document.getElementById("main-balance").innerText = totalMainBalance;
 
