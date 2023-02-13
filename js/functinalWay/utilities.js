@@ -15,7 +15,7 @@ function getTextValueById(elementId) {
     return textElementValue;
 }
 function setTextValue(elementId, amount) {
-    if (amount == 0 || amount<0) {
+    if (amount == 0 ) {
         document.getElementById(elementId).innerText = "00";
 
     }

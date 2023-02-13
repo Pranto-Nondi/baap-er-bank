@@ -12,7 +12,6 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
         const setTotalWithdraw = getWithdrawInputValue + getWithdrawTextValue;
         setTextValue("withdraw-display", setTotalWithdraw);
     }
-
     else {
         alert("Sorry ! You Have Insufficient Balance");
     }
