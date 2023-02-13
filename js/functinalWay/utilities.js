@@ -3,6 +3,7 @@ function getInputValueById(elementId) {
     const inputFieldValue = parseFloat(document.getElementById(elementId).value);
     document.getElementById(elementId).value = "";
     if (isNaN(inputFieldValue)) {
+        alert("Invalid Data");
         return 0;
     }
     else {
