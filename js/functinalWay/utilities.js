@@ -2,8 +2,8 @@ function getInputValueById(elementId) {
 
     const inputFieldValue = parseFloat(document.getElementById(elementId).value);
     document.getElementById(elementId).value = "";
-    if (isNaN(inputFieldValue)){
-        return 00;
+    if (isNaN(inputFieldValue)) {
+        return 0;
     }
     else {
         return inputFieldValue;
