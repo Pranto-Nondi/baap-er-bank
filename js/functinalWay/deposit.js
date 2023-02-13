@@ -7,7 +7,7 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
     setTextValue("deposit-amount", setTotalDeposit);
     const getMainTextBalance = getTextValueById("main-balance");
     const mainBalanceTotal = getMainTextBalance + getDepositInputValue;
-    setTextValue("main-balance", mainBalanceTotal)
+    setTextValue("main-balance", mainBalanceTotal);
 
 
 

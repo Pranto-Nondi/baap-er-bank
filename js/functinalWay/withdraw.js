@@ -6,10 +6,6 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     setTextValue("main-balance", setTotalMainBalance);
     const getWithdrawTextValue = getTextValueById("withdraw-display");
     const setTotalWithdraw = getWithdrawInputValue + getWithdrawTextValue;
-    setTextValue("withdraw-display", setTotalWithdraw)
-
-
-
-
+    setTextValue("withdraw-display", setTotalWithdraw);
 
 })
