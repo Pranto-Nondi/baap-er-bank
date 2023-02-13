@@ -10,11 +10,17 @@ function getInputValueById(elementId) {
         return inputFieldValue;
     }
 }
-
 function getTextValueById(elementId) {
     const textElementValue = parseFloat((document.getElementById(elementId).innerText));
     return textElementValue;
 }
 function setTextValue(elementId, amount) {
-    document.getElementById(elementId).innerText = amount;
+    if (amount == 0) {
+        document.getElementById(elementId).innerText = "00";
+
+    }
+    else {
+        document.getElementById(elementId).innerText = amount;
+    }
+
 }
